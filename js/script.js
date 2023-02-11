@@ -4,7 +4,22 @@ const cartItem = document.querySelector('.cart-items-container')
 const cartBtn = document.querySelector('#cart-btn')
 const navbar = document.querySelector('.navbar')
 const menuBtn = document.querySelector('#menu-btn')
-
+let valueDisplays = document.querySelectorAll(".num");
+let interval =5000;
+valueDisplays.forEach(valueDisplay =>{
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-id"));
+    let duration = Math.floor(interval/endValue);
+    console.log(valueDisplay);
+    console.log(endValue);
+    let counter = setInterval(function(){
+        startValue +=1;
+        valueDisplay.textContent = startValue;
+        if(startValue == endValue){
+            clearInterval(counter);
+        }
+    }, duration);
+});
 
 
 searchBtn.addEventListener('click', ()=>{
