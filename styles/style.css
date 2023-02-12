@@ -272,7 +272,7 @@ a{
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-self: start;
 }
 .home img{
     width: 60%;
