@@ -280,7 +280,7 @@ a{
 
 .home .content{
     margin-left: 30px;
-    max-width: 40rem;
+    align-self: start;
 }
 
 .home .content h3{
