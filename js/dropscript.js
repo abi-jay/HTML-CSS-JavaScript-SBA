@@ -98,18 +98,35 @@ function CalendarControl() {
       monthLabel.innerHTML = calendarControl.calMonthName[calendar.getMonth()];
     },
     selectDate: function (e) {
-      console.log(
-        `${e.target.textContent} ${
-          calendarControl.calMonthName[calendar.getMonth()]
-        } ${calendar.getFullYear()}`
-      );
-       if(e.target.textContent==15){
+      console.log(e.target.textContent%4);
+      if(e.target.textContent%4 ==0 ){
 
-      calendarmsg = '<span class="calendarmsg">Date: ';
+      calendarmsg = '<span class="calendarmsg">';
       $('.calendarmsg').html(calendarmsg + `${e.target.textContent} ${
         calendarControl.calMonthName[calendar.getMonth()]
-      } ${calendar.getFullYear()}` + '</span>');
+      } ${calendar.getFullYear()}` + ': Sorry there are no availabilities!</span>');
        }
+      else if(e.target.textContent%4 ==1 ){
+
+        calendarmsg = '<span class="calendarmsg">';
+        $('.calendarmsg').html(calendarmsg + `${e.target.textContent} ${
+          calendarControl.calMonthName[calendar.getMonth()]
+        } ${calendar.getFullYear()}` + ': Call (987)654-3210 to book:<br>Private Lessons<br>General Admission</span>');
+         }
+         else if(e.target.textContent%4 ==2 ){
+
+          calendarmsg = '<span class="calendarmsg">';
+          $('.calendarmsg').html(calendarmsg + `${e.target.textContent} ${
+            calendarControl.calMonthName[calendar.getMonth()]
+          } ${calendar.getFullYear()}` + ': Call (987)654-3210 to book:<br>Happy hour events<br>General Admission</span>');
+           }
+           else if(e.target.textContent%4 ==3 ){
+
+            calendarmsg = '<span class="calendarmsg">';
+            $('.calendarmsg').html(calendarmsg + `${e.target.textContent} ${
+              calendarControl.calMonthName[calendar.getMonth()]
+            } ${calendar.getFullYear()}` + ': Call (987)654-3210 to book:<br>Private sleigh tours<br>Family friendly events</span>');
+             }
       
     },
     plotSelectors: function () {
