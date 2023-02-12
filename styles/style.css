@@ -412,6 +412,9 @@ a{
     position:absolute;
     z-index: -1;
 }
+.about{
+    margin-top: 5%;
+}
 .about .row .image{
      flex: 1 1 45rem;
 }
