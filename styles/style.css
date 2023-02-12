@@ -271,7 +271,6 @@ a{
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    margin-top: 10px;
     display: flex;
     align-items: center;
 }
