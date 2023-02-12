@@ -269,18 +269,19 @@ a{
 
 .home{
     min-height: 100vh;
-    background: url(./images/ski1.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: -134px;
     display: flex;
     align-items: center;
 }
-
+.home img{
+    width: 60%;
+}
 
 .home .content{
     margin-left: 30px;
-    max-width: 60rem;
+    max-width: 40rem;
 }
 
 .home .content h3{
@@ -451,8 +452,8 @@ a{
     gap: 10px;
 }
 .wrapper .container{
-    width: 28vmin;
-    height: 28vmin;
+    width: 32vmin;
+    height: 34vmin;
     border: thick solid #fff83a;
     display: flex;
     flex-direction: column;
@@ -466,6 +467,7 @@ a{
     font-size: 2.5em;
 }
 .wrapper i{
+    padding-left: 15%;
     color: #000000;
     font-size: 2.0em;
     text-align: center;
@@ -475,7 +477,7 @@ a{
     display: grid;
     place-items: center;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 .wrapper span.text{
     color: white;
