@@ -21,7 +21,6 @@ valueDisplays.forEach(valueDisplay =>{
     }, duration);
 });
 
-
 searchBtn.addEventListener('click', ()=>{
     searchForm.classList.toggle('active');
     document.addEventListener('click', (e)=>{
@@ -49,4 +48,3 @@ menuBtn.addEventListener('click', ()=>{
         }
     })
 })
-
