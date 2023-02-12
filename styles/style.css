@@ -268,14 +268,11 @@ a{
 /* ------------------------------------------HOME SECTION */
 
 .home{
-    min-height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     align-self: start;
-}
-.home img{
-    width: 60%;
+    
 }
 
 .home .content{
@@ -286,6 +283,7 @@ a{
 .home .content h3{
     font-size: 4rem;
     color: #000000;
+    
 }
 
 .home .content p{
@@ -740,7 +738,9 @@ a{
     .header .logo img{
         height: 7rem;
     }
-
+    .home{
+        min-height: auto;
+    }
     section{
         padding: 2rem;
     }
