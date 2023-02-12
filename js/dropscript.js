@@ -18,10 +18,22 @@ $('.dropdown').click(function () {
 $('.dropdown-menu li').click(function () {
   //var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
   var input = $(this).parents('.dropdown').find('input').val(),
-  msg = '<span class="msg">Hidden input value: ';
+  msg = '<span class="msg">';
   console.log(input);
   if(input=='Snow Tubing'){
-    $('.msg').html(msg + input + '</span>');
+    $('.msg').html(msg + input + '<br>Adult: $49.99<br>Kids > 5 years: $39.99</span>');
+  }
+  else if(input=='Nordic Skiing'){
+    $('.msg').html(msg + input + '<br>Adult: $59.99<br>Kids > 6 years: $39.99</span>');
+  }
+  else if(input=='Snow Shoeing'){
+    $('.msg').html(msg + input + '<br>Adult: $32.99<br>Kids > 6 years: $26.99</span>');
+  }
+  else if(input=='Sleigh Row'){
+    $('.msg').html(msg + input + '<br>Adult: $29.99<br>Kids > 3 years: $19.99</span>');
+  }
+  else if(input=='Lift'){
+    $('.msg').html(msg + input + '<br>Adult: $29.99<br>Kids > 3 years: $19.99</span>');
   }
 }); 
 
