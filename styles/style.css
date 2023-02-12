@@ -549,7 +549,7 @@ span.choose {
   width: 300px;
   display: inline-block;
   margin-bottom: 5%;
-  background-color: #c3e2e7;
+  background-color: #43d7e7;
   border-radius: 2px;
   box-shadow: 0 0 2px rgb(204, 204, 204);
   transition: all .5s ease;
@@ -563,6 +563,7 @@ span.choose {
     cursor: pointer;
     display: block;
     font-size: 1.3em;
+    color: #d43410;
     padding: 10px
 }
 .dropdown .select > i {
