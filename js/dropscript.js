@@ -258,3 +258,42 @@ function CalendarControl() {
 }
 
 const calendarControl = new CalendarControl();
+
+
+let minusBtn1 = document.getElementById("minus-btn1");
+let count1 = document.getElementById("count1");
+let plusBtn1= document.getElementById("plus-btn1");
+
+let countNum1 = 0;
+count1.innerHTML = countNum1;
+
+minusBtn1.addEventListener("click", () => {
+	if(countNum1>0){
+		countNum1-= 1;
+	}
+	count1.innerHTML = countNum1;
+});
+
+plusBtn1.addEventListener("click", () => {
+	countNum1 += 1;
+	count1.innerHTML = countNum1;
+});
+
+let minusBtn2 = document.getElementById("minus-btn2");
+let count2 = document.getElementById("count2");
+let plusBtn2 = document.getElementById("plus-btn2");
+
+let countNum2 = 0;
+count2.innerHTML = countNum2;
+
+minusBtn2.addEventListener("click", () => {
+	if(countNum2>0){
+		countNum2 -= 1;
+	}
+	count2.innerHTML = countNum2;
+});
+
+plusBtn2.addEventListener("click", () => {
+	countNum2 += 1;
+	count2.innerHTML = countNum2;
+});
