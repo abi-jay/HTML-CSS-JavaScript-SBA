@@ -895,7 +895,7 @@ button {
     background: #fff;
     border-radius: 5px;
     width: 30%;
-    font-size: 2.2em;
+    font-size: 2.0em;
     position: relative;
     transition: all 5s ease-in-out;
   }
@@ -926,7 +926,7 @@ button {
       width: 70%;
     }
     .popup{
-      width: 80%;
+      width: 70%;
     }
   }
 
