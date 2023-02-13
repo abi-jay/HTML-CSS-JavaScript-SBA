@@ -12,7 +12,7 @@ The main purpose of this SBA is to test your skills in implementing a clean HTML
 - github link
 - project folder
 - a video explaining the project
-
+- cross browser/cross platform and mobile compatibilty functionalities added
 
 ## Technical Requirements
 
