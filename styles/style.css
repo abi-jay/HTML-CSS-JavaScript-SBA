@@ -387,6 +387,25 @@ a{
 /* ------------------------------------------PRODUCTS SECTION */
 
 /* ------------------------------------------ABOUT US SECTION */
+.table-scroll {
+    padding: 10px;
+    margin: 5px;
+  }
+  /*Table 5*/
+.Table5 {
+    font-size: 1.7em;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    white-space: nowrap; /* to prevent text wrapping */
+}
+.responsive-table {
+    overflow-x: auto;
+}
 .hero{
     width: 100%;
     height: 100vh;
