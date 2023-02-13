@@ -16,8 +16,8 @@ $('.dropdown').click(function () {
 
 
 $('.dropdown-menu li').click(function () {
-  //var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
-  var input = $(this).parents('.dropdown').find('input').val(),
+  //let input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
+  let input = $(this).parents('.dropdown').find('input').val(),
   msg = '<span class="msg">';
   console.log(input);
   if(input=='Snow Tubing'){
@@ -220,7 +220,7 @@ function CalendarControl() {
         "click",
         calendarControl.navigateToCurrentMonth
       );
-      for (var i = 0; i < dateNumber.length; i++) {
+      for (let i = 0; i < dateNumber.length; i++) {
           dateNumber[i].addEventListener(
             "click",
             calendarControl.selectDate,
